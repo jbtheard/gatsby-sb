@@ -1,11 +1,13 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
+
+// This would work
+// import {  Link } from "gatsby"
+
+// this wouldnt work
 import { LocalizedLink as Link } from "gatsby-theme-i18n"
 
 
-/**
- * Primary UI component for user interaction
- */
 export const Button = ({ label }) => {
   
   return (
@@ -14,10 +16,6 @@ export const Button = ({ label }) => {
 };
 
 Button.propTypes = {
-  /**
-   * Button contents
-   */
   label: PropTypes.string.isRequired,
- 
 };
 
